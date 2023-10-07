@@ -6,6 +6,7 @@ int triangle(int a)
 		{
 			for (int j = 0; j < i; j++)
 				printf("*");
+			
 			printf("\n");
 		}
 }
@@ -14,5 +15,6 @@ int main()
 {
 	int a;
 	scanf("%i", &a);
+	
 	triangle(a);
 }
