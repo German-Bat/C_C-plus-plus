@@ -4,12 +4,14 @@ int main()
 	int n, m;
 	int a[1000];
 	scanf("%i %i", &n, &m);
+	
 	for (int i = 0; i < (n * m); ++i)
 		scanf("%i", &a[i]);
 	
 	for (int i = 0; i < m; i++)
 	{
 		int temp;
+		
 		for (int j = 0; j < n; j++)
 			{
 				for (int k = 0; k < (n - 1); k++)
@@ -29,7 +31,5 @@ int main()
 		for (int j = 0; j < m; j++)
 			printf("%i ", a[i * m + j]);
 		printf("\n");
-
 	}
-
 }
