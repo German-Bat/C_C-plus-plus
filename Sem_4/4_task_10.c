@@ -13,6 +13,7 @@ int main()
 	double doub;
 	int* int_star;
 	int a[10];
+	
 	printf("char %i\n", sizeof(ch));
 	printf("short %i\n", sizeof(sh));
 	printf("int %i\n", sizeof(in));
