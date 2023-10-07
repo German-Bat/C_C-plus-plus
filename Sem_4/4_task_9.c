@@ -26,16 +26,20 @@ int main()
 {
 	double l, m, h, val, eps = pow(10, -10);
 	scanf("%lf %lf", &l, &h);
+	
 	m = (l + h) / 2;
 	val = F4(m);
+	
 	while ((h - l) > eps)
 	{
 		if (val > 0)
 			h = m;
 		else
 			l = m;
+		
 		m = (l + h) / 2;
 		val = F4(m);
 	}
+	
 	printf("%lf\n", m);
 }
