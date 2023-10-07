@@ -3,11 +3,13 @@
 int sum_of_digits(int a)
 {
 	int sum = 0;
+	
 	while (a > 0)
 	{
 		sum += a % 10;
 		a = a / 10;
 	}
+	
 	return sum;
 }
 
@@ -24,6 +26,7 @@ int main()
 {
 	int a;
 	scanf("%i", &a);
+	
 	printf("%i\n", sum_of_digits(a));
 	printf("%i\n", sum_of_digits_rec(a));
 }
