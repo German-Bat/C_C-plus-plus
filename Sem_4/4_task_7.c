@@ -33,5 +33,6 @@ int main()
 	int x1, y1, x2, y2;
 	scanf("%i %i", &x1, &y1);
 	scanf("%i %i", &x2, &y2);
+	
 	printf("%lf\n", angle(x1, y1, x2, y2));
 }
