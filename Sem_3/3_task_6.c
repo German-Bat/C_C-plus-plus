@@ -13,6 +13,7 @@ int main()
 {
 	int a;
 	scanf("%i", &a);
+	
 	if (a == 0)
 		printf("%i\n", 0);
 	else
