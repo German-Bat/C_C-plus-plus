@@ -6,6 +6,7 @@ int main()
 {
 	int numbers[6] = {4, 8, 15, 16, 23, 42};
 	int* p = &numbers[3];
+	
 	printf("%i\n", numbers[5]);
 	printf("%i\n", *p);
 	printf("%i\n", *(p + 1));
