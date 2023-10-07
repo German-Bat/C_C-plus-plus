@@ -4,10 +4,12 @@ int main()
 	int a[1000];
 	int n;
 	scanf("%i", &n);
+	
 	for (int i = 0; i < n; ++i)	
 		scanf("%i", &a[i]);
 
 	int i = 0, j = (n - 1), c;
+	
 	while (i < j) 
 	{
 		if ((a[i] % 2) == 1)
@@ -19,9 +21,9 @@ int main()
 						c = a[i];
 						a[i] = a[j];
 						a[j] = c;
+						
 						i++;
 					}
-
 			j--;
 			} 
 	}
