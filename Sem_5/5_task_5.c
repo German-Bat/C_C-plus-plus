@@ -1,15 +1,26 @@
 #include <stdio.h>
+#include <string.h>
+
 
 int main()
 {
-	char str[100];
-	scanf("%[^\n]", str);
+	char a[100], c[100];
+	scanf("%[^\n]", a);
+	int len = strlen(a), counter = 0;
+	
+	a[len] = ' ';
+	a[len + 1] = '\0';
 
-	for (int i = 0; str[i]; i++)
+	for (int i = 0; a[i]; i++)
 	{
-		if (str[i] == ' ')
-			str[i] = '\n';
+		if (a[i] == ' ')
+		{
+			c[i + counter] = '!';
+			counter += 1;
+		}
+		
+		c[i + counter] = a[i];
 	}
 	
-	printf("%s\n", str);
+	printf("%s", c);
 }
